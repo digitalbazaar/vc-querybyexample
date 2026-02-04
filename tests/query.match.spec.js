@@ -3,7 +3,7 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {credentialMatches, queryByExample} from '../lib/index.js';
+import {credentialMatches, queryByExample} from '../index.js';
 import {edgeCaseCredentials, mockCredentials} from './mockCredentials.js';
 
 import * as chai from 'chai';

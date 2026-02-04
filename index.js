@@ -3,9 +3,9 @@
  *
  * SPDX-License-Identifier: BSD-3-Clause
  */
-import {exampleToJsonPointerMap} from './queryByExample.js';
+import {exampleToJsonPointerMap} from './lib/queryByExample.js';
 
-export {credentialMatches} from './match.js';
+export {credentialMatches} from './lib/match.js';
 
 export const queryByExample = {
   toJsonPointerMap: exampleToJsonPointerMap
