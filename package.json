@@ -1,0 +1,53 @@
+{
+  "name": "@digitalbazaar/vc-querybyexample",
+  "version": "0.0.1",
+  "description": "A library to support Verifiable Credential queryByExample format used in VCALM (VC-API).",
+  "keywords": [
+    "verifiable",
+    "credentials",
+    "digital",
+    "credentials",
+    "VCALM",
+    "VC-API"
+  ],
+  "license": "BSD-3-Clause",
+  "author": {
+    "name": "Digital Bazaar, Inc.",
+    "email": "support@digitalbazaar.com",
+    "url": "https://digitalbazaar.com/"
+  },
+  "type": "module",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "npm run test-node",
+    "test-node": "cross-env NODE_ENV=test mocha -t 10000 tests/",
+    "coverage": "cross-env NODE_ENV=test c8 npm run test-node",
+    "coverage-ci": "cross-env NODE_ENV=test c8 --reporter=lcovonly --reporter=text-summary --reporter=text npm run test-node",
+    "coverage-report": "c8 report",
+    "lint": "eslint ."
+  },
+  "c8": {
+    "reporter": [
+      "lcov",
+      "text-summary",
+      "text"
+    ]
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "json-pointer": "^0.6.2"
+  },
+  "devDependencies": {
+    "@digitalbazaar/eslint-config": "^7.0.1",
+    "c8": "^10.1.3",
+    "chai": "^6.2.2",
+    "cross-env": "^10.1.0",
+    "mocha": "^11.7.5",
+    "mocha-lcov-reporter": "^1.3.0"
+  }
+}
